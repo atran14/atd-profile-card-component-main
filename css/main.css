@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+body {
+  background: #19a2ae;
+  position: relative;
+}
+
+main {
+  display: grid;
+  height: inherit;
+  width: inherit;
+  grid-template-rows: 1fr 2rem;
+  grid-template-columns: 1fr;
+  place-items: center;
+  overflow: auto;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+#bg-pattern-top {
+  -webkit-transform: translateX(calc(-978px + 50vw)) translateY(calc(-978px + 50vh));
+          transform: translateX(calc(-978px + 50vw)) translateY(calc(-978px + 50vh));
+}
+#bg-pattern-bottom {
+  -webkit-transform: translateX(50vw) translateY(40vh);
+          transform: translateX(50vw) translateY(40vh);
+}
+
+.profile-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: min(90vw, 450px);
+  min-height: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.profile-card p {
+  color: #6a6f81;
+}
+.profile-card p strong {
+  color: #2d3248;
+}
+.profile-card .top-banner {
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile-card .profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profile-card .avatar {
+  position: relative;
+  width: 100%;
+  height: calc(5rem / 2 + 5px);
+}
+.profile-card .avatar__pic {
+  position: absolute;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -2.5rem;
+  left: 50%;
+  margin-left: -2.5rem;
+  -webkit-box-shadow: 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white;
+          box-shadow: 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white, inset 0 0 0 5px white;
+}
+.profile-card .profile-info {
+  padding: 0.75rem 0;
+}
+.profile-card .profile-info * {
+  line-height: 1.6;
+}
+.profile-card .profile-info p:nth-child(1) {
+  font-size: 1.2rem;
+}
+.profile-card .profile-info p:nth-child(2) {
+  font-size: 0.85rem;
+}
+.profile-card hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #969696;
+}
+.profile-card .social-media-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+.profile-card .social-media-stats__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1.6rem 1rem;
+}
+.profile-card .social-media-stats__box p {
+  line-height: 1.5;
+}
+.profile-card .social-media-stats__box p:nth-child(1) {
+  font-size: 1.2rem;
+}
+.profile-card .social-media-stats__box p:nth-child(2) {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.attribution {
+  font-size: 11px;
+}
+.attribution > a {
+  margin: 0 0.15rem;
+  color: #3e52a3;
+}
+
+.profile-card {
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */
